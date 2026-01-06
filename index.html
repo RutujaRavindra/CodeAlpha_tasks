@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="todo-container">
+    <h2>📝 To-Do List</h2>
+
+    <form id="taskForm">
+        <input type="text" id="taskInput" placeholder="Enter new task..." required>
+        <button type="submit">Add</button>
+    </form>
+
+    <!-- FILTER BUTTONS -->
+    <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+        <button onclick="filterTasks('pending')">Pending</button>
+    </div>
+<!-- TASK COUNTER -->
+<div class="task-counter">
+    <span id="totalCount">Total: 0</span>
+    <span id="completedCount">Completed: 0</span>
+    <span id="pendingCount">Pending: 0</span>
+</div>
+<div class="filters">...</div>
+<div class="task-counter">...</div>
+<ul id="taskList"></ul>
+
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1abc9c, #2ecc71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background: #ecfdfb;
+    padding: 30px;
+    width: 360px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+h2 {
+    text-align: center;
+    color: #0b5345;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #1abc9c;
+}
+
+button {
+    background: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #0b5345;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.filters button {
+    background: #2ecc71;
+    flex: 1;
+    margin: 0 3px;
+    font-size: 14px;
+}
+
+.filters button:hover {
+    background: #27ae60;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* Task Buttons */
+.task-buttons button {
+    margin-left: 5px;
+    padding: 5px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+/* Complete */
+.task-buttons .complete {
+    background: #2ecc71;
+}
+
+/* Delete */
+.task-buttons .delete {
+    background: #e74c3c;
+}
+/* TASK COUNTER */
+.task-counter {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#totalCount {
+    color: #0b5345; /* dark turquoise */
+}
+
+#completedCount {
+    color: #2ecc71; /* lime green */
+}
+
+#pendingCount {
+    color: #e74c3c; /* cherry red */
+}
